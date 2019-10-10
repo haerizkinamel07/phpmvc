@@ -1,7 +1,14 @@
 <div class="container mt-3">
-	
+
+
+	<div class="row">
+		<div class="col-lg-6">
+			<?php Flasher::flash(); ?>
+		</div>
+	</div>
+
 	<div class="row"> 
-		<div class="col-6">
+		<div class="col-lg-6">
 			<h3>Daftar Mahasiswa</h3>
 
 			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#formModal">
@@ -38,13 +45,13 @@
         
   <form action="<?= BASEURL; ?>/mahasiswa/tambah" method="post">
 		<div class="form-group">
-   		 <label for="nrp">Nrp</label>
+   		 <label for="nama">Nama</label>
     	<input type="text" class="form-control" id="nama" name="nama">
   </div>
 
 		<form action="<?= BASEURL; ?>/mahasiswa/tambah" method="post">
 		<div class="form-group">
-   		 <label for="nama">Nama</label>
+   		 <label for="nrp">Nrp</label>
     	<input type="text" class="form-control" id="nrp" name="nrp">
   </div>
 
